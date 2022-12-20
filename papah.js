@@ -15,6 +15,9 @@ Recode : NazeDev & Papah-Chan ( Irfaan Official  )
 
 **/
 require('./config')
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
+
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const os = require('os')
